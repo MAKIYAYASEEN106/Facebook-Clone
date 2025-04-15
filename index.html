@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-left">
+                <div class="logo">
+                    <img src="pics/logo.png" alt="">
+                </div>
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search FriendBook">
+                </div>
+            </div>
+            <div class="nav-center">
+                <i class="fa-solid fa-house"></i>
+                <a href=""><i class="fa-solid fa-tv"></i></a>
+                <a href=><i class="fa-solid fa-store"></i></a>
+                <a href=""><i class="fa-solid fa-users"></i></a>
+                <a href=""><i class="fa-solid fa-gamepad"></i></a>
+            </div>
+            <div class="nav-right">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-brands fa-facebook-messenger"></i>
+                <i class="fa-solid fa-bell"></i>
+                <img src="pics/profile.jpg" alt="" class="profile-pic" onclick="openCard()">
+                <div class="card-menu-wrap" id="cardwrap"> 
+                    <div class="card-menu">
+                        <div class="profile-menu">
+                            <img src="pics/profile.jpg" alt="">
+                            <p>Web Coding</p>
+                        </div>
+                        <a href="#"class="card-menu-item" >
+                            <img src="pics/meta.webp" alt="">
+                            <p>Meta Busniness Suite</p>
+                            <span></span>
+                        </a>
+                        <a href="#"class="card-menu-item" >
+                            <img src="pics/setting.avif" alt="">
+                            <p>Setting & Privacy</p>
+                            <span></span>
+                        </a>
+                        <a href="#"class="card-menu-item" >
+                            <img src="pics/help.png" alt="">
+                            <p>Help & Support</p>
+                            <span></span>
+                        </a>
+                        <a href="#"class="card-menu-item" >
+                            <img src="pics/display.jpg" alt="">
+                            <p>Display and Accessibility</p>
+                            <span></span>
+                        </a>
+                        <a href="#"class="card-menu-item" >
+                            <img src="pics/feedback.png" alt="">
+                            <p>Give Feedback</p>
+                        </a>
+                        <a href="#"class="card-menu-item" >
+                            <img src="pics/logout.webp" alt="">
+                            <p>Logout</p>
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </nav>
+<!-- ................ main section ......... -->
+<div class="main">
+    <div class="left">
+        <div class="img">
+            <img src="pics/profile.jpg" alt="">
+            <p>Web coding</p>
+        </div>
+        <div class="img">
+            <img src="pics/freinds.png" alt="">
+            <p>Friends</p>
+        </div>
+        <div class="img">
+            <img src="pics/news.png" alt="">
+            <p>News</p>
+        </div>
+        <div class="img">
+            <img src="pics/memories.avif" alt="">
+            <p>Memories</p>
+        </div>
+        <div class="img">
+            <img src="pics/group.jpg" alt="">
+            <p>Groups</p>
+        </div>
+        <div class="img">
+            <img src="pics/marketplace.png" alt="">
+            <p>Marketplace</p>
+        </div>
+        <div class="img">
+            <img src="pics/watch-video.png" alt="">
+            <p>Watch</p>
+        </div>
+        <div class="img">
+            <img src="pics/reels.jpeg" alt="">
+            <p>Reels</p>
+        </div>
+        <div class="img">
+            <img src="pics/messenger.png" alt="">
+            <p>Messenger</p>
+        </div>
+        <div class="img">
+            <img src="pics/messenger kids.png" alt="">
+            <p>Messenger Kids</p>
+        </div>
+        <div class="img">
+            <img src="pics/gaming video.jpg" alt="">
+            <p>Gaming Video</p>
+        </div>
+        <div class="img">
+            <img src="pics/see down.png" alt="">
+            <p>See More</p>
+        </div>
+    
+        <hr>
+        <div class="shortcuts">
+            <p>Your Shortcuts</p>
+            <a href="#">Edit</a>
+        </div>
+        <div class="img">
+            <img src="pics/bubble game.webp" alt="">
+            <p>Bubble Game</p>
+        </div>
+        <div class="img">
+            <img src="pics/candy crush.png" alt="">
+            <p>Candy Crush</p>
+        </div>
+        <div class="img">
+            <img src="pics/bubble shoter.png" alt="">
+            <p>BUbble Shoter</p>
+        </div>
+        <div class="img">
+            <img src="pics/web.jpg" alt="">
+            <p>Web coding</p>
+        </div>
+    </div>
+
+    <!-- .................. center section ............. -->
+    <div class="main-center">
+        <div class="top-box">
+            <div class="my-story">
+                <img src="pics/profile.jpg" alt="">
+                <div class="upload">
+                    <img src="pics/uploaded.png" alt="">
+                    <p>Add Your Story</p>
+                </div>
+            </div>
+            <div class="friends-story" onclick="viewStory('Laibaa Tariq', 'pics/story3.jpg')">
+                <img src="pics/story3.jpg" alt="">
+                <div class="friends-profile">
+                    <img src="pics/friend profile.jpeg" alt="">
+                    <div class="circle"></div>
+                </div>
+                <div class="friends-name">
+                    <p>Laibaa Tariq</p>
+                </div>
+            </div>
+            <div class="friends-story" onclick="viewStory('Muazzama Khalid', 'pics/stroy1.jpeg')">
+                <img src="pics/stroy1.jpeg" alt="">
+                <div class="friends-profile">
+                    <img src="pics/profile 1.jpeg" alt="">
+                    <div class="circle"></div>
+                </div>
+                <div class="friends-name">
+                    <p>Muazzama Khalid</p>
+                </div>
+            </div>
+            <div class="friends-story" onclick="viewStory('Hafsa Sajid', 'pics/story2.jpg')">
+                <img src="pics/story2.jpg" alt="">
+                <div class="friends-profile">
+                    <img src="pics/profile2.jpeg" alt="">
+                    <div class="circle"></div>
+                </div>
+                <div class="friends-name">
+                    <p>Hafsa Sajid</p>
+                </div>
+            </div>
+            <div class="friends-story" onclick="viewStory('Fatima Yaseen', 'pics/friend story.jpg')">
+                <img src="pics/friend story.jpg" alt="">
+                <div class="friends-profile">
+                    <img src="pics/profile 4.jpeg" alt="">
+                    <div class="circle"></div>
+                </div>
+                <div class="friends-name">
+                    <p>Fatima Yaseen</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="create-post">
+            <div class="ptop">
+                <img src="pics/profile.jpg" alt="">
+                <input type="text" placeholder="What's on your mind, Web Coding">
+            </div>
+            <hr>
+            <div class="pbottom">
+                <div class="post-icon">
+                    <i class="fa-solid fa-video red"></i>
+                    <p>Live Video</p>
+                </div>
+                <div class="post-icon">
+                    <i class="fa-solid fa-images green"></i>
+                    <p>Photos/Video</p>
+                </div>
+                <div class="post-icon">
+                    <i class="fa-solid fa-face-grin yellow"></i>
+                    <p>Feelings/Activities</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="friend-post" class="friends-post">
+            <div class="friends-ptop">
+                <div class="img-name">
+                    <img src="pics/profile.jpg" alt="">
+                    <div class="reels">
+                        <p class="reels">Muazzama Khalid</p>
+                        <p class="time">2h. <i class="fa-solid fa-users"></i></p>
+                    </div>
+                </div>
+                <div class="menu">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <img src="pics/post.jpeg" alt="">
+            <div class="info">
+                <div class="post-icons">
+                    <img src="pics/thumb.png" alt="">
+                    <img src="pics/heart.png" alt="">
+                    <img src="pics/smile.jpeg" alt="">
+                    <p id="like-count-1">You, Muazzama Khalid and 1.3k others</p>
+                </div>
+                <div class="comment">
+                    <p id="comment-count-1">221 Comments</p>
+                    <p>89 Shares</p>
+                </div>
+            </div>
+            <hr>
+            <div class="like">
+                <div class="like-icon" onclick="toggleLike(1)">
+                    <i class="fa-solid fa-thumbs-up" id="like-icon-1"></i>
+                    <p>Like</p>
+                </div>
+                <div class="like-icon" onclick="focusComment(1)">
+                    <i class="fa-solid fa-message"></i>
+                    <p>Comment</p>
+                </div>
+                <div class="like-icon">
+                    <i class="fa-solid fa-share"></i>
+                    <p>Share</p>
+                </div>
+            </div>
+            <hr>
+            <div class="comment-wrapper">
+                <img src="pics/img.jpeg" alt="">
+                <div class="circle"></div>
+            </div>
+            <div class="comment-search">
+                <input type="text" id="comment-input-1" placeholder="Write a Comment" onkeypress="handleCommentKeypress(event, 1)">
+                <i class="fa-regular fa-face-smile"></i>
+                <i class="fa-solid fa-camera"></i>
+                <i class="fa-regular fa-note-sticky"></i>
+            </div>
+            <div class="comments-container" id="comments-container-1"></div>
+        </div>
+    </div>
+
+    <div class="main-right">
+        <div class="sponsored-secction">
+            <h4>sponsored</h4>
+            <div class="sponsored-link">
+                <img src="pics/advertisement.svg" alt="">
+                <p>Online Advertisement <br> Services <br> <a href="">onlinecervices.com</a></p>
+            </div>
+        </div>
+            <div class="sponsored-secction">
+                <h4>sponsored</h4>
+                <div class="sponsored-link">
+                    <img src="pics/advertisement.svg" alt="">
+                    <p>Online Advertisement <br> Services <br> <a href="">onlinecervices.com</a></p>
+                </div>
+        </div>
+         <hr> 
+         <div class="page-section">
+            <h4>Your pages and profile</h4>
+            <div class="page-links">
+                <img src="pics/profile.jpg" alt="">
+                <p>Web Coding</p>
+            </div>
+            <div class="page-links-item">
+            <img src="pics/switch.jpeg" alt="">   
+            <p>Switch to Page</p> 
+            </div>
+            <div class="page-links-item">
+                <img src="pics/promotion.jpg" alt="">   
+                <p>Create Prom0otion</p> 
+                </div>
+         </div>
+         <hr>
+         <div class="friend-section">
+         <h4>Friend Request</h4>  
+         <div class="page-links">
+          <img src="pics/request.jpeg" alt="">  
+          <p>Makiya Yaseen</p>
+         </div> 
+         <div class="buttons">
+            <button type="submit" class="confirm">Confirm</button>
+            <button type="submit" class="delete">Delete</button>
+         </div>
+         </div>
+         <hr>
+         <div class="contact-scetion">
+            <div class="contact-search">
+                <h4>Contact</h4>
+                <img src="pics/search.png" alt="">
+                <img src="pics/dots.png" alt="">
+            </div>
+            <div class="page-links">
+                <div class="online">
+                    <img src="pics/contact.jpeg" alt="">
+                </div>
+                <p>Alison jaffe</p>
+            </div>
+            <div class="page-links">
+                <div class="online">
+                    <img src="pics/1.jpeg" alt="">
+                </div>
+                <p>Silent_Spectre</p>
+            </div>
+            <div class="page-links">
+                <div class="online">
+                    <img src="pics/2.jpg" alt="">
+                </div>
+                <p>Saba_World</p>
+            </div>
+            <div class="page-links">
+                <div class="online">
+                    <img src="pics/3.jpeg" alt="">
+                </div>
+                <p>StayCoolX</p>
+            </div>
+            <div class="page-links">
+                <div class="online">
+                    <img src="pics/4.jpg" alt="">
+                </div>
+                <p>WhyNotMe</p>
+            </div>
+            <div class="page-links">
+                <div class="online">
+                    <img src="pics/5.jpg" alt="">
+                </div>
+                <p>Hina_Star</p>
+            </div>
+            <div class="page-links">
+                <div class="online">
+                    <img src="pics/6.jpeg" alt="">
+                </div>
+                <p>Sara.Smile</p>
+            </div>
+            <div class="page-links">
+                <div class="online">
+                    <img src="pics/7.jpeg" alt="">
+                </div>
+                <p>ZainCoolX</p>
+            </div>
+            <div class="page-links">
+                <div class="online">
+                    <img src="pics/8.jpg" alt="">
+                </div>
+                <p>Noor_Vibes</p>
+            </div>
+            <div class="page-links">
+                <div class="online">
+                    <img src="pics/9.jpeg" alt="">
+                </div>
+                <p>AyeshaHere</p>
+            </div>
+
+         </div>
+     </div>
+</div>
+</div> 
+</div>
+
+<!-- Story Viewer Modal -->
+<div class="story-modal" id="story-modal">
+    <div class="story-content">
+        <span class="close-story" onclick="closeStory()">&times;</span>
+        <img src="" id="story-image" alt="Story">
+        <div class="story-info">
+            <h3 id="story-author"></h3>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
